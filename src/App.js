@@ -1,25 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Home from "./components/Home";
+import Objects from "./components/Objects";
+import Cool from "./components/Cool";
+import Nav from "./components/Nav";
+import Green from "./components/Green";
+import Cyan from "./components/Cyan";
+import Purple from "./components/Purple";
+import DataPage from "./components/DataPage";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 function App() {
+
+    /*const [objectInfo]=React.useState([{name:'Cinder', age: 28, color: "orange"},
+        {name:'Aganos', age: 28, color:"purple"},
+        {name:'Jago', age: 22, color: "red"}]);
+
+    const objectEles = objectInfo.map((bx, idx)=>
+        <Objects name={bx.name} power={bx.age} age={bx.color} key={idx}/>
+    );*/
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <Router>
+            <Nav/>
+            <Switch>
+                <Route path={"/purple"} component={Purple}/>
+                <Route path={"/cyan"} component={Cyan}/>
+                <Route path={"/green"} component={Green}/>
+                <Route path={"/cool"} component={Cool}/>
+                <Route path={"/dataPage/:id"} component={DataPage}/>
+                <Route path={"/objects"} component={Objects}/>
+                <Route path={"/"} component={Home}/>
+            </Switch>
+        </Router>
+      </div>
   );
 }
 
