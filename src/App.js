@@ -16,15 +16,6 @@ import {
 
 function App() {
 
-    /*const [objectInfo]=React.useState([{name:'Cinder', age: 28, color: "orange"},
-        {name:'Aganos', age: 28, color:"purple"},
-        {name:'Jago', age: 22, color: "red"}]);
-
-    const objectEles = objectInfo.map((bx, idx)=>
-        <Objects name={bx.name} power={bx.age} age={bx.color} key={idx}/>
-    );*/
-
-
   return (
       <div className="App">
         <Router>

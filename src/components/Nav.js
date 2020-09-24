@@ -6,7 +6,6 @@ function Nav(){
         <nav>
                 <Link to={"/"}>Home</Link>
                 <Link to={"/objects"}>Objects</Link>
-                <Link to={"/dataPage/Mason"}>Mason</Link>
                 <Link to={"/Cool"}>Cool</Link>
         </nav>
     )
