@@ -3,20 +3,20 @@ import DataPage from "./DataPage";
 
 function Objects(){
     const [array]=React.useState([{
-        name: "Mason",
-        age: 20,
-        color: "Orange",
-        id: "My favorite color is Orange"
+        name: "Bonnie",
+        age: 76,
+        color: "pink",
+        id: "Grandma"
     },{
         name: "Bonnie",
         age: 74,
         color: "Pink",
-        id: "My favorite Color is Pink"
+        id: "2"
     },{
         name: "Corbin",
         age: 25,
         color: "Cyan",
-        id: "My favorite color is Cyan"
+        id: "3"
     }
     ]);
     const arrayEles = array.map((bx, idx)=>

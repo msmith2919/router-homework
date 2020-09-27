@@ -8,6 +8,8 @@ import Green from "./components/Green";
 import Cyan from "./components/Cyan";
 import Purple from "./components/Purple";
 import DataPage from "./components/DataPage";
+import Data from "./components/Data";
+//import Box from "./components/Box";
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,6 +28,7 @@ function App() {
                 <Route path={"/green"} component={Green}/>
                 <Route path={"/cool"} component={Cool}/>
                 <Route path={"/dataPage/:id"} component={DataPage}/>
+                <Route path={"/data/:id1/:id2/:id3/:id4"} component={Data}/>
                 <Route path={"/objects"} component={Objects}/>
                 <Route path={"/"} component={Home}/>
             </Switch>

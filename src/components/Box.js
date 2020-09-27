@@ -1,13 +1,16 @@
 import React from 'react';
 
-function Box(){
+function Box(props){
 
-    return(
-        <div className="block" style={{marginTop: "20px", height: "100px", width: "100px", borderWidth: "2px", borderStyle: "solid", borderColor: "orange", backgroundColor: "orange"}}>
-            {}
+    const [display] = React.useState(props.display);
+
+    return (
+        <div>
+            <h1>{display}</h1>
         </div>
-
     )
+
+
 }
 
 export default Box;
